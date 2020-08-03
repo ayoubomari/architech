@@ -1,0 +1,92 @@
+.title-UTF8{
+    color: royalblue;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+/*section1*/
+
+.char-to-hex {
+    padding: 0px 0px 80px 0px;
+}
+
+
+#input-char-to-hex{
+    padding: 40px 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+#input-char-to-hex > label {
+    font-size: 1.2rem;
+    padding: 7px;
+}
+
+#input-char-to-hex > input {
+    font-size: 1.2rem;
+    padding: 7px;
+}
+
+.Transformer {
+    font-size: 1.2rem;
+    padding: 7px;
+    border: 0px;
+    border-radius: 5px;
+    color: aqua;
+    background-color: #0a0a0a;
+    cursor: pointer;
+}
+
+.tableaux-char-to-hex{
+    text-align: center;
+    margin: 0px 10%;
+    padding: 0px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tableaux-char-to-hex div {
+    padding: 10px 0px;
+    border: 1px solid black;
+    font-family: sans-serif;
+    height: 40px;
+}
+
+
+.char-t{
+    flex: 1 1;
+}
+
+.unicode-t{
+    flex: 1 1;
+}
+
+.binaire-t{
+    flex: 2 1;
+}
+
+.hexadecimal-t{
+    flex: 1 1;
+}
+
+@media all and (max-width : 840px) {
+    .tableaux-char-to-hex {
+        margin: 0px 1%;
+    }
+}
+
+@media all and (max-width : 687px) {
+    .tableaux-char-to-hex div {
+        font-size: 0.7rem;
+        height: 3rem;
+    }
+}
+
+/*section2*/
+

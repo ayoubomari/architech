@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aide - Architech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+
+    <!--Style-->
+    <link rel="stylesheet" type="text/css" href="css\general.css">
+    <link rel="stylesheet" type="text/css" href="css\help.css">
+
+    <!--protocol mail-->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="heder-nav">
+            <div><span>architech</span></div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="./circuit/circuit.html">Circuits</a></li>
+                <li><a href="./codage/codage.html">Codage</a></li>
+                <li><a href="help.html">Aide</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="sec1">
+            <p><span>Aide</span></p>
+            <div class="victor">
+                <p class="lining">
+                    Page d'aide pour les cas suivants. Si votre message contient du contenu en dehors des cas suivants, votre question ou suggestion ne recevra pas de réponse . <br>
+                    Vous pouvez nous envoyer un e-mail : <br>
+                    Pour vous alerter d'un problème technique lorsque vous naviguez sur notre site . <br>
+                    Ou pour suggérer des modifications au site . <br>
+                    Ou pour demander à rejoindre notre équipe . 
+                    <input type="button" value="Envoyer un message" class="green-button" id="gotoMail">
+                </p>
+
+                <img src="img/svg/undraw_server_down_s4lk.svg">
+            </div>
+        </section>
+
+
+        <section class="mail">
+
+            <div class="div-mail">
+
+                <h1>Envoyer un message</h1>
+
+                    <div class="inputs">
+
+                        <form action="https://formspree.io/xjvalrev" method="POST">
+                            <div class="inputss">
+                                <label>Nom et Prenom <span id="douxPoints">:</span></label>
+                                <input type="text" name="name" id="name">
+                            </div>
+        
+                            <div class="inputss">
+                                <label>Email <span id="douxPoints">:</span></label>
+                                <input type="email" name="_replyto" id="gmail">
+                            </div>
+        
+                            <div class="inputss">
+                                <label>L'objectif <span id="douxPoints">:</span></label>
+                                <input type="text" name="L'objectif" id="objet">
+                            </div>
+        
+                            <div class="inputss">
+                                <label>Message <span id="douxPoints">:</span></label>
+                                <textarea name="message" class="text-area" id="textarea"></textarea>
+                            </div>
+                            
+                            <div class="send-reset">
+                                <input type="submit" value="Send" id="send">
+                                <div id="null" ></div>
+                                <input type="reset" value="Annuler" id="reset">
+                            </div>
+                            
+                        </form>
+                        
+                    </div>
+
+                
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <p><span>Architech</span> &copy; 2020 By OMARI Ayoub</p>
+    </footer>
+
+
+
+    
+
+    <script src="js/generalDomStyle.js"></script>
+    <script src="js/emailValidation.js"></script>
+</body>
+
+</html>
