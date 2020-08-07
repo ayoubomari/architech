@@ -4,6 +4,7 @@ It's website can help peaples to undestanding the basic thinks in computer scien
   - UTF 8 .
   - logic ciruits like (AND, OR, NOT, XOR, NAND ,NOR) .
   - Multeplexer and demultiplexer .
+  - Decoder .
   - Seven-segment display .
   and more .
 
