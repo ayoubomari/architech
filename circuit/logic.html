@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circuits logiques</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./../img/logo.jpg" type="image/x-icon">
+
+    <!--Style-->
+    <link rel="stylesheet" type="text/css" href="./../css/general.css">
+    <link rel="stylesheet" type="text/css" href="css\logic.css">
+</head>
+
+<body>
+
+    <header class="heder">
+        
+        <nav class="heder-nav">
+            <div><span>architech</span></div>
+            <ul>
+                <li><a href="./../index.html">Accueil</a></li>
+                <li><a href="./../circuit/circuit.html">Circuits</a></li>
+                <li><a href="./../codage/codage.html">Codage</a></li>
+                <li><a href="./../help.html">Aide</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <section class="circuit">
+            <p>OR (OU)</p>
+
+            <div class="hold" id="ex-Or">
+                <img src="./../img/circuits/or.jpg" alt="or" class="proto">
+
+                <div class="check-light" id="or-a" title="a">
+                    <input type="checkbox" name="or-a" class="input-a">
+                </div>
+
+                <div class="check-light" id="or-b" title="b">
+                    <input type="checkbox" name="or-b" class="input-b">
+                </div>
+
+                <img src="./../img/circuits/lampC.png" class="lite" title="La sortie c" id="lite-or">
+            </div> 
+
+
+            <div class="result">
+                <div>b</div>
+                <div>a</div>
+                <div>La sortie c</div>
+            </div>
+            <!---->
+            <div class="result">
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+            <div class="result">
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+
+        </section>
+
+
+
+        <section class="circuit">
+            <p>AND (ET)</p>
+
+            <div class="hold" id="ex-Or">
+                <img src="./../img/circuits/and.jpg" alt="or" class="proto">
+
+                <div class="check-light" id="and-a" title="a">
+                    <input type="checkbox" name="and-a" class="input-a">
+                </div>
+
+                <div class="check-light" id="and-b" title="b">
+                    <input type="checkbox" name="and-b" class="input-b">
+                </div>
+
+                <img src="./../img/circuits/lampC.png" class="lite" title="La sortie c" id="lite-and">
+            </div> 
+
+
+            <div class="result">
+                <div>b</div>
+                <div>a</div>
+                <div>La sortie c</div>
+            </div>
+            <!---->
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+
+        </section>
+
+
+        <section class="circuit">
+            <p>NOT (INV)</p>
+
+            <div class="hold" id="ex-Or">
+                <img src="./../img/circuits/non.jpg" alt="or" class="proto">
+
+                <div class="check-light" id="non-a" title="a">
+                    <input type="checkbox" name="non-a" class="input-a">
+                </div>
+
+                <img src="./../img/circuits/lampC.png" class="lite" title="La sortie c" id="lite-non">
+            </div> 
+
+
+            <div class="result">
+                <div>a</div>
+                <div>La sortie c</div>
+            </div>
+            <!---->
+            <div class="result">
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+
+        </section>
+
+
+        <section class="circuit">
+            <p>XOR</p>
+
+            <div class="hold" id="ex-Or">
+                <img src="./../img/circuits/xor.jpg" alt="or" class="proto">
+
+                <div class="check-light" id="xor-a" title="a">
+                    <input type="checkbox" name="xor-a" class="input-a">
+                </div>
+
+                <div class="check-light" id="xor-b" title="b">
+                    <input type="checkbox" name="xor-b" class="input-b">
+                </div>
+
+                <img src="./../img/circuits/lampC.png" class="lite" title="La sortie c" id="lite-xor">
+            </div> 
+
+
+            <div class="result">
+
+                <div>b</div>
+                <div>a</div>
+                <div>La sortie c</div>
+            </div>
+            <!---->
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+
+        </section>
+
+
+        <section class="circuit">
+            <p>NOR</p>
+
+            <div class="hold" id="ex-Or">
+                <img src="./../img/circuits/nor.jpg" alt="or" class="proto">
+
+                <div class="check-light" id="nor-a" title="a">
+                    <input type="checkbox" name="nor-a" class="input-a">
+                </div>
+
+                <div class="check-light" id="nor-b" title="b">
+                    <input type="checkbox" name="nor-b" class="input-b">
+                </div>
+
+                <img src="./../img/circuits/lampC.png" class="lite" title="La sortie c" id="lite-nor">
+            </div> 
+
+
+            <div class="result">
+
+                <div>b</div>
+                <div>a</div>
+                <div>La sortie c</div>
+            </div>
+            <!---->
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+
+        </section>
+
+
+        <section class="circuit">
+            <p>NAND</p>
+
+            <div class="hold" id="ex-Or">
+                <img src="./../img/circuits/nand.jpg" alt="or" class="proto">
+
+                <div class="check-light" id="nand-a" title="a">
+                    <input type="checkbox" name="nand-a" class="input-a">
+                </div>
+
+                <div class="check-light" id="nand-b" title="b">
+                    <input type="checkbox" name="nand-b" class="input-b">
+                </div>
+
+                <img src="./../img/circuits/lampC.png" class="lite" title="La sortie c" id="lite-nand">
+            </div> 
+
+
+            <div class="result">
+
+                <div>b</div>
+                <div>a</div>
+                <div>La sortie c</div>
+            </div>
+            <!---->
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+
+        </section>
+
+
+        <section class="circuit">
+            <p>XNOR</p>
+
+            <div class="hold" id="ex-Or">
+                <img src="./../img/circuits/xnor.jpg" alt="or" class="proto">
+
+                <div class="check-light" id="xnor-a" title="a">
+                    <input type="checkbox" name="xnor-a" class="input-a">
+                </div>
+
+                <div class="check-light" id="xnor-b" title="b">
+                    <input type="checkbox" name="xnor-b" class="input-b">
+                </div>
+
+                <img src="./../img/circuits/lampC.png" class="lite" title="La sortie c" id="lite-xnor">
+            </div> 
+
+
+            <div class="result">
+
+                <div>b</div>
+                <div>a</div>
+                <div>La sortie c</div>
+            </div>
+            <!---->
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">0</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">0</div>
+                <div class="r-s-c valid">0</div>
+            </div>
+            <div class="result">
+
+                <div class="r-e-b">1</div>
+                <div class="r-e-a">1</div>
+                <div class="r-s-c valid">1</div>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p><span>Architech</span> &copy; 2020 By OMARI Ayoub</p>
+        </footer>
+
+
+    </main>
+
+
+
+    <script src="./../js/generalDomStyle.js"></script>
+    <script src="js/circuitLampping.js"></script>
+</body>
+
+
+</html>

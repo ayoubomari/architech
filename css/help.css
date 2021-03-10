@@ -1,0 +1,193 @@
+.mail{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.div-mail {
+    background-color: #0a0a0a;
+    padding: 20px 32px;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 1px solid darkmagenta;
+    border-radius: 70px;
+    color: #ddd;
+}
+
+.div-mail h1 {
+    color: aqua;
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+    line-height: 4rem;
+}
+
+
+.div-mail .inputs {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.inputss {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+
+.text-area {
+    margin: 0px 0px 7px auto;
+    padding: 5px 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+    width: 280px;
+    height: 150px;
+    font-size: 1.4rem;
+}
+
+
+.div-mail .valids {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 2rem;
+}
+
+.valids label{
+    margin: 0px 55px 0px 0px;
+}
+
+.div-mail input {
+    /* margin-left: auto; */
+    margin: 0px 0px 7px auto;
+    padding: 5px 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+    width: 280px;
+}
+
+.note {
+    height: 1rem;
+    justify-self: flex-start;
+    align-self: flex-end;
+    font-size: 0.8rem;
+    color: rgb(255, 30, 0);
+    margin-bottom: 5px;
+    width: 280px;
+    text-align: left;
+}
+
+
+#text-area {
+    margin: 0px 0px 7px auto;
+    padding: 5px 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+    width: 280px;
+    height: 200px;
+}
+
+.send-reset {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding: 8px 0px 0px 0px;
+}
+
+.send-reset #send {
+    padding: 9px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #0a0a0a;
+    background-color: aqua;
+    color: #0a0a0a;
+}
+
+.send-reset #reset {
+    padding: 9px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid aqua;
+    background-color: #0a0a0a;
+    color: aqua;
+}
+
+
+@media all and (max-width : 677.5px){
+    #null{
+        display: none;
+    }
+} 
+
+@media all and (max-width : 405px) {
+    .div-mail {
+        border-radius: 0px;
+        font-size: 0.9rem;
+    }
+    
+    .div-mail h1 {
+        font-size: 1rem;
+    }
+
+    .valids label {
+        margin: 0px 0px 0px 0px;
+    }
+
+    #douxPoints {
+        display: none;
+    }
+
+    .div-mail input {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #text-area {
+        width: 100%;
+    }
+
+    .send-reset {
+        justify-content: center;
+        
+    }
+
+    .note {
+        width: 90%;
+    }
+
+    .send-reset #send {
+        font-size: 0.8rem;
+    }
+
+    .send-reset #reset {
+        font-size: 0.8rem;
+    }
+    
+    
+}
+
+
+@media all and (max-width : 294.6px) {
+    .send-reset #send {
+        margin: 0px 2.5px 0px 0px;
+    }
+    
+}
+
+#null {
+    width: 15px;
+}

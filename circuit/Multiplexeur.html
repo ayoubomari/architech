@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplexeur et Démultiplexeur</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./../img/logo.jpg" type="image/x-icon">
+
+    <!--Style-->
+    <link rel="stylesheet" type="text/css" href="./../css\general.css">
+    <link rel="stylesheet" type="text/css" href="css\multiplexeur.css">
+    
+</head>
+
+
+<body>
+
+    <header class="heder">
+        
+        <nav class="heder-nav">
+            <div><span>architech</span></div>
+            <ul>
+                <li><a href="./../index.html">Accueil</a></li>
+                <li><a href="./../circuit/circuit.html">Circuits</a></li>
+                <li><a href="./../codage/codage.html">Codage</a></li>
+                <li><a href="./../help.html">Aide</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+    <main>
+
+        <section class="MUX1">
+            <p class="title">Multiplexeur</p>
+            <div class="multiplexeur1">
+                <div class="text">
+                    Un multiplexeur (abréviation : MUX) est un circuit permettant de concentrer sur une même voie de transmission différents types de liaisons (informatique, télécopie, téléphonie, télétex) en sélectionnant une entrée parmi N. 
+                    Il possédera donc une sortie et N entrées, 
+                    ainsi qu'une entrée de commande de log2 N bits permettant de choisir quelle entrée sera sélectionnée.
+                </div>
+                <span class="lite-title">2 entrées = 2^1 donc une ligne de sélection</span>
+
+                <div class="proto">
+                    <img src="./../img/circuits/multiplexeur1.png" id="multiplexeur1">
+                    
+                    <div class="checks" id="e1-mux1" title="e1"><input type="checkbox"></div>
+                    <div class="checks" id="e0-mux1" title="e0"><input type="checkbox"></div>
+                    <div class="checks" id="a0-mux1" title="a0"><input type="checkbox"></div>
+
+                    <img src="./../img/circuits/lampC.png" class="lite-multiplexeur1" id="lite-multiplexeur1" title="S">
+                </div>
+                
+                <!---->
+                <div class="result">
+                    <div class="a0">a<span class="mini">0</span></div>
+                    <div class="S">S</div>
+                </div>
+                <div class="result mux">
+                    <div class="a0">0</div>
+                    <div class="S valid">e<span class="mini">0</span></div>
+                </div>
+                <div class="result mux">
+                    <div class="a0">1</div>
+                    <div class="S valid">e<span class="mini">1</span></div>
+                </div>
+                <p class="fun">S = ¯a<span class="mini">0</span> . e<span class="mini">0</span> + a<span class="mini">0</span> . e<span class="mini">1</span></p>
+            </div>
+        </section>
+
+        <div class="line-dive">
+            <div class="line-vide-div"></div>
+        </div>
+
+        <section class="MUX1">
+            <p class="title">Application d'un multiplexeur</p>
+            <div class="multiplexeur1">
+                <div class="text">
+                    nous peut utiliser un multiplexeur pour réaliser un function logique .
+                </div>
+
+                <div class="proto">
+                    <img src="./../img/circuits/fMultiplexeur.png" id="multiplexeur1">
+                    
+                    <div class="checks" id="a" title="a"><input type="checkbox"></div>
+                    <div class="checks" id="b" title="b"><input type="checkbox"></div>
+                    <div class="checks" id="c" title="c"><input type="checkbox"></div>
+
+                    <img src="./../img/circuits/lampC.png" class="lite-multiplexeur1" id="F" title="F">
+                </div>
+                
+                <!---->
+                <div class="result">
+                    <div>a</div>
+                    <div>b</div>
+                    <div>c</div>
+                    <div>F</div>
+                    <div>Ei</div>
+                </div>
+                <div class="result mux">
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div class="valid">1</div>
+                    <div class="valid">E0=1</div>
+                </div>
+                <div class="result mux">
+                    <div>0</div>
+                    <div>0</div>
+                    <div>1</div>
+                    <div class="valid">1</div>
+                    <div class="valid">E1=1</div>
+                </div>
+                <div class="result mux">
+                    <div>0</div>
+                    <div>1</div>
+                    <div>0</div>
+                    <div class="valid">1</div>
+                    <div class="valid">E2=1</div>
+                </div>
+                <div class="result mux">
+                    <div>0</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div>0</div>
+                    <div>E3=0</div>
+                </div>
+                <div class="result mux">
+                    <div>1</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>E4=0</div>
+                </div>
+                <div class="result mux">
+                    <div>1</div>
+                    <div>0</div>
+                    <div>1</div>
+                    <div>0</div>
+                    <div>E5=0</div>
+                </div>
+                <div class="result mux">
+                    <div>1</div>
+                    <div>1</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>E6=0</div>
+                </div>
+                <div class="result mux">
+                    <div>1</div>
+                    <div>1</div>
+                    <div>1</div>
+                    <div class="valid">1</div>
+                    <div class="valid">E7=1</div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="vide-div"></div>
+
+
+        <section class="DMUX1">
+            <p class="title">Démultiplexeur</p>
+            <div class="demultiplexeur">
+                <div class="text">
+                    Un démultiplexeur est un circuit combinatoire à N+1 entrées et 2N sorties. Les N entrées, appelées entrées d'adressage, permettent d'envoyer sur l'une des sorties la dernière entrée, appelée entrée de donnée.<br>
+                    <br>
+                    Un décodeur est un cas particulier dans lequel on relie l'entrée donnée du démultiplexeur à 1. Le décodeur est donc un circuit combinatoire à N entrées et 2N sorties. Sélectionner une sortie grâce aux entrées d'adressage la fera passer de l'état 1 à l'état 0.
+                </div>
+                <span class="lite-title">Démultiplexeur 1 => 4</span>
+
+                <div class="proto">
+                    <img src="./../img/circuits/demultiplexeur1.png" id="multiplexeur1">
+
+                    <div class="checks" id="E" title="E"><input type="checkbox"></div>
+                    <div class="checks" id="a0" title="a0"><input type="checkbox"></div>
+                    <div class="checks" id="a1" title="a1"><input type="checkbox"></div>
+
+                    <img src="./../img/circuits/lampC.png" class="lite-multiplexeur1" id="S0" title="S0">
+                    <img src="./../img/circuits/lampC.png" class="lite-multiplexeur1" id="S1" title="S1">
+                    <img src="./../img/circuits/lampC.png" class="lite-multiplexeur1" id="S2" title="S2">
+                    <img src="./../img/circuits/lampC.png" class="lite-multiplexeur1" id="S3" title="S3">
+                </div>
+
+                <!---->
+                <div class="result" id="RDMUX">
+                    <div class="a1">a<span class="mini">1</span></div>
+                    <div class="a0">a<span class="mini">0</span></div>
+
+                    <div class="S3">S<span class="mini">3</span></div>
+                    <div class="S2">S<span class="mini">2</span></div>
+                    <div class="S1">S<span class="mini">1</span></div>
+                    <div class="S0">S<span class="mini">0</span></div>
+                </div>
+                <!---->
+                <!---->
+                <div class="result" id="RDMUX">
+                    <div class="a1">0</div>
+                    <div class="a0">0</div>
+
+                    <div class="S3">/</div>
+                    <div class="S2">/</div>
+                    <div class="S1">/</div>
+                    <div class="S0 valid">E</div>
+                </div>
+                <!---->
+                <!---->
+                <div class="result" id="RDMUX">
+                    <div class="a1">0</div>
+                    <div class="a0">1</div>
+
+                    <div class="S3">/</div>
+                    <div class="S2">/</div>
+                    <div class="S1 valid">E</div>
+                    <div class="S0">/</div>
+                </div>
+                <!---->
+                <!---->
+                <div class="result" id="RDMUX">
+                    <div class="a1">1</div>
+                    <div class="a0">0</div>
+
+                    <div class="S3">/</div>
+                    <div class="S2 valid">E</div>
+                    <div class="S1">/</div>
+                    <div class="S0">/</div>
+                </div>
+                <!----><!---->
+                <div class="result" id="RDMUX">
+                    <div class="a1">1</div>
+                    <div class="a0">1</div>
+
+                    <div class="S3 valid">E</div>
+                    <div class="S2">/</div>
+                    <div class="S1">/</div>
+                    <div class="S0">/</div>
+                </div>
+                <!---->
+                
+                <p class="fun">S<span class="mini">0</span> = ¯a<span class="mini">1</span> . ¯a<span class="mini">0</span> . E</p>
+                <p class="fun">S<span class="mini">1</span> = ¯a<span class="mini">1</span> . a<span class="mini">0</span> . E</p>
+                <p class="fun">S<span class="mini">2</span> = a<span class="mini">1</span> . ¯a<span class="mini">0</span> . E</p>
+                <p class="fun">S<span class="mini">3</span> = a<span class="mini">1</span> . a<span class="mini">0</span> . E</p>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <script src="./../js/generalDomStyle.js"></script>
+    <script src="./js/multiplexeur.js"></script>
+</body>
+
+</html>

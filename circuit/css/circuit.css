@@ -1,0 +1,28 @@
+#seven {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        
+}
+
+.minimize {
+        width: 540px;
+}
+@media all and (max-width : 557px){
+        .minimize {
+                width: 0%;
+        }
+}
+
+@media all and (max-width : 300px){
+       
+        #seven {
+            display: inline-block;
+            width: 200px;
+            margin: 0px;
+            margin-top: 15px;
+        }
+
+
+}
+    

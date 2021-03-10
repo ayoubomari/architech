@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>décodeur</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./../img/logo.jpg" type="image/x-icon">
+
+    <!--Style-->
+    <link rel="stylesheet" type="text/css" href="./../css\general.css">
+    <link rel="stylesheet" type="text/css" href="css\decodeur.css">
+</head>
+
+<body>
+
+    <header class="heder">
+        
+        <nav class="heder-nav">
+            <div><span>architech</span></div>
+            <ul>
+                <li><a href="./../index.html">Accueil</a></li>
+                <li><a href="./../circuit/circuit.html">Circuits</a></li>
+                <li><a href="./../codage/codage.html">Codage</a></li>
+                <li><a href="./../help.html">Aide</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+    <main>
+
+        <section class="decodeur simple-decodeur">
+            <p class="title">Décodeur</p>
+            
+            <div class="DCD">
+                <p class="lite-title">
+                    C'est un circuit a <span class="red">n</span> entrées et <span class="red">2^n</span> sorties, 
+                    Il active la sortie qui porte le numéro équivalent ou nombre binaire entré et tandis que les autre sorties sont inactives (restent a zéro) <br> 
+                    l'entrée <span class="red">V</span> active ou désactive le décodeur .
+                </p>
+
+                <div class="proto">
+                    <img src="./../img/circuits/simpleDecodeure.png" class="DCD-img" id="S-DCD-img">
+
+                    <div class="checks" id="e0" title="e0"><input type="checkbox"></div>
+                    <div class="checks" id="e1" title="e1"><input type="checkbox"></div>
+                    <div class="checks" id="V" title="V"><input type="checkbox"></div>
+
+                    <img src="./../img/circuits/lampC.png" class="lite-DCD" id="S0" title="S0">
+                    <img src="./../img/circuits/lampC.png" class="lite-DCD" id="S1" title="S1">
+                    <img src="./../img/circuits/lampC.png" class="lite-DCD" id="S2" title="S2">
+                    <img src="./../img/circuits/lampC.png" class="lite-DCD" id="S3" title="S3">
+                </div>
+
+                 <!---->
+                 <div class="result" id="RDCD">
+                    <div class="V valid">V</div>
+                    <div class="a1 valid">e<span class="mini">1</span></div>
+                    <div class="a0 valid">e<span class="mini">0</span></div>
+
+                    <div class="S3">S<span class="mini">3</span></div>
+                    <div class="S2">S<span class="mini">2</span></div>
+                    <div class="S1">S<span class="mini">1</span></div>
+                    <div class="S0">S<span class="mini">0</span></div>
+                </div>
+                <!---->
+
+                <!---->
+                <div class="result" id="RDCD">
+                    <div class="V">0</div>
+                    <div class="a1">X</div>
+                    <div class="a0">X</div>
+
+                    <div class="S3">0</div>
+                    <div class="S2">0</div>
+                    <div class="S1">0</div>
+                    <div class="S0">0</div>
+                </div>
+                <!---->
+
+
+                <!---->
+                <div class="result" id="RDCD">
+                    <div class="V">1</div>
+                    <div class="a1">0</div>
+                    <div class="a0">0</div>
+
+                    <div class="S3">0</div>
+                    <div class="S2">0</div>
+                    <div class="S1">0</div>
+                    <div class="S0 valid">1</div>
+                </div>
+                <!---->
+                <!---->
+                <div class="result" id="RDCD">
+                    <div class="V">1</div>
+                    <div class="a1">0</div>
+                    <div class="a0">1</div>
+
+                    <div class="S3">0</div>
+                    <div class="S2">0</div>
+                    <div class="S1 valid">1</div>
+                    <div class="S0">0</div>
+                </div>
+                <!---->
+                <!---->
+                <div class="result" id="RDCD">
+                    <div class="V">1</div>
+                    <div class="a1">1</div>
+                    <div class="a0">0</div>
+
+                    <div class="S3">0</div>
+                    <div class="S2 valid">1</div>
+                    <div class="S1">0</div>
+                    <div class="S0">0</div>
+                </div>
+                <!---->
+                <!---->
+                <div class="result" id="RDCD">
+                    <div class="V">1</div>
+                    <div class="a1">1</div>
+                    <div class="a0">1</div>
+
+                    <div class="S3 valid">1</div>
+                    <div class="S2">0</div>
+                    <div class="S1">0</div>
+                    <div class="S0">0</div>
+                </div>
+                <!---->
+                <div class="lite-line">S0 = V.¯e1.¯e0</div>
+                <div class="lite-line">S1 = V.¯e1.e0</div>
+                <div class="lite-line">S2 = V.e1.¯e0</div>
+                <div class="lite-line">S3 = V.e1.e0</div>
+            </div>
+        </section>
+
+        <div class="line-dive">
+            <div class="line-vide-div"></div>
+        </div>
+
+
+        <section class="decodeur decodeur2-4">
+            <p class="title">Conception d'un décodeur 2 => 4</p>
+            
+            <div class="proto">
+                <img src="./../img/circuits/decodeure24.png" class="DCD-img" id="DCD-2-4-img">
+
+                <div class="checks" id="ee0" title="e0"><input type="checkbox"></div>
+                <div class="checks" id="ee1" title="e1"><input type="checkbox"></div>
+                <div class="checks" id="VV" title="V"><input type="checkbox"></div>
+
+                <img src="./../img/circuits/lampC.png" class="lite-DCD" id="SS0" title="S0">
+                <img src="./../img/circuits/lampC.png" class="lite-DCD" id="SS1" title="S1">
+                <img src="./../img/circuits/lampC.png" class="lite-DCD" id="SS2" title="S2">
+                <img src="./../img/circuits/lampC.png" class="lite-DCD" id="SS3" title="S3">
+            </div>
+        </section>
+
+        <div class="line-dive">
+            <div class="line-vide-div"></div>
+        </div>
+
+        <section class="decodeur decodeur-UAL">
+            <p class="title">Applications d'un décodeur</p>
+            <p class="lite-title">
+                Permet de sélectionner l'opération à exécuter dans l'UAL    
+            </p>
+
+            <div class="proto">
+                <img src="./../img/circuits/UAL.jpg" class="DCD-img" id="DCD-2-4-img">
+
+                <div class="checks" id="eee0" title="e0"><input type="checkbox"></div>
+                <div class="checks" id="eee1" title="e1"><input type="checkbox"></div>
+
+                <div class="checks" id="a" title="a"><input type="checkbox"></div>
+                <div class="checks" id="b" title="b"><input type="checkbox"></div>
+
+                <img src="./../img/circuits/lampC.png" class="lite-DCD" id="S" title="S">
+                <img src="./../img/circuits/lampC.png" class="lite-DCD" id="R" title="R">
+            </div>
+        </section>
+
+
+        <div class="line-dive">
+            <div class="line-vide-div"></div>
+        </div>
+
+        <section class="decodeur decodeur-f">
+            <p class="title">Applications d'un décodeur</p>
+            <p class="lite-title">
+                À l'aide d'un décodeur 3 vers 8 on peut réaliser n'importe quelle une fonction logique à 3 variables .
+            </p>
+
+            <div class="proto">
+                <img src="./../img/circuits/fDecodeur.png" class="DCD-img" id="f-DCD-img">
+
+                <div class="checks" id="A" title="A"><input type="checkbox"></div>
+                <div class="checks" id="B" title="B"><input type="checkbox"></div>
+                <div class="checks" id="C" title="C"><input type="checkbox"></div>
+
+                <img src="./../img/circuits/lampC.png" class="lite-DCD" id="F" title="F">
+            </div>
+
+            <!---->
+            <div class="result" id="RDCD">
+                <div class="A">A</div>
+                <div class="B">B</div>
+                <div class="C">C</div>
+
+                <div class="F valid">F</div>
+                
+            </div>
+            <!---->
+
+            <!---->
+             <div class="result" id="RDCD">
+                <div class="A">0</div>
+                <div class="B">0</div>
+                <div class="C">0</div>
+
+                <div class="F valid">0</div>
+                
+            </div>
+            <!---->
+            <!---->
+            <div class="result" id="RDCD">
+                <div class="A">0</div>
+                <div class="B">0</div>
+                <div class="C">1</div>
+
+                <div class="F valid">1</div>
+                
+            </div>
+            <!---->
+            <!---->
+            <div class="result" id="RDCD">
+                <div class="A">0</div>
+                <div class="B">1</div>
+                <div class="C">0</div>
+
+                <div class="F valid">1</div>
+                
+            </div>
+            <!---->
+            <!---->
+            <div class="result" id="RDCD">
+                <div class="A">0</div>
+                <div class="B">1</div>
+                <div class="C">1</div>
+
+                <div class="F valid">1</div>
+                
+            </div>
+            <!---->
+            <!---->
+            <div class="result" id="RDCD">
+                <div class="A">1</div>
+                <div class="B">0</div>
+                <div class="C">0</div>
+
+                <div class="F valid">0</div>
+                
+            </div>
+            <!---->
+            <!---->
+            <div class="result" id="RDCD">
+                <div class="A">1</div>
+                <div class="B">0</div>
+                <div class="C">1</div>
+
+                <div class="F valid">0</div>
+                
+            </div>
+            <!---->
+            <!---->
+            <div class="result" id="RDCD">
+                <div class="A">1</div>
+                <div class="B">1</div>
+                <div class="C">0</div>
+
+                <div class="F valid">1</div>
+                
+            </div>
+            <!---->
+            <!---->
+            <div class="result" id="RDCD">
+                <div class="A">1</div>
+                <div class="B">1</div>
+                <div class="C">1</div>
+
+                <div class="F valid">1</div>
+                
+            </div>
+            <!---->
+        </section>
+
+    </main>
+
+
+
+    <script src="./../js/generalDomStyle.js"></script>
+    <script src="./js/decodeur.js"></script>
+</body>
+
+
+</html>
